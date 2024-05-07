@@ -29,6 +29,12 @@ mongoose
 const userRoutes = require("./routes/User");
 app.use("/api/users", userRoutes);
 
+const adminRoutes = require("./routes/Admin");
+app.use("/api/admin", adminRoutes);
+
+const categoryRoutes = require("./routes/Category");
+app.use("/api/categories", categoryRoutes);
+
 // SERVER
 app.listen(3001, () => {
   console.log("Server is running on port 3001");

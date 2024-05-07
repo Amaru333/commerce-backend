@@ -41,7 +41,6 @@ module.exports = {
 
   autoLogin: async function (req, res) {
     const user = await UserModel.findById(req.user._id).select("-password");
-    console.log(user);
     res.send(user);
   },
 };
