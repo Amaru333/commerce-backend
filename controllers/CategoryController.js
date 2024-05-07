@@ -15,7 +15,6 @@ module.exports = {
       const savedCategory = await newCategory.save();
       res.send(savedCategory);
     } catch (err) {
-      console.log(err);
       res.status(400).send(err);
     }
   },
